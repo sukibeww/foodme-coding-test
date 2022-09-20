@@ -1,10 +1,9 @@
 import { Box, Typography, Button } from '@mui/material';
 import "./CarouselCard.scss";
 import React from 'react';
-import Image from '../img/brooke-lark-HlNcigvUi4Q-unsplash.jpg';
 
 const CarouselCard = (props) => {
-    const { isAvailable, message } = props;
+    const { isAvailable, message, imgUrl } = props;
     return(
         <Box className="card-container">
             <Box className="first-section-container">
@@ -27,9 +26,9 @@ const CarouselCard = (props) => {
             <Box
                 className="second-section-container"
                 style={{
-                backgroundImage: `url(${Image})`,
+                backgroundImage: `url(${imgUrl})`,
                 backgroundSize: "cover",
-                backgroundPosition: "center",
+                backgroundPosition: "left top",
                 color: "#f5f5f5",
                 padding: '20px',
                 zIndex: '-1'

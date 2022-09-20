@@ -7,29 +7,35 @@ import "./Carousel.scss";
 import CarouselCard from './CarouselCard';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { Box } from '@mui/material';
+import Feature1 from '../img/feature-1.png';
+import Feature2 from '../img/feature-2.png';
+import Feature3 from '../img/feature-3.png';
 
 const carouselData = [
   {
       id: 1,
       isAvailable: true,
       message: "Filter menus by your dietary requirements",
+      imgUrl: Feature1
   },
   {
       id: 2,
       isAvailable: true,
       message: "Search across all Australian delivery  & booking providers",
+      imgUrl: Feature2
   },
   {
       id: 3,
       isAvailable: false,
       message: "Manage your restaurant bucket list  & share with friends",
+      imgUrl: Feature3
   },
 ]
 
 const renderSlide = (data) => {
   return(
     <SwiperSlide className="swiper-card" key={data.id}>
-      <CarouselCard isAvailable={data.isAvailable} message={data.message}/>
+      <CarouselCard isAvailable={data.isAvailable} message={data.message} imgUrl={data.imgUrl}/>
     </SwiperSlide>
   )
 }

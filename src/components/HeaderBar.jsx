@@ -28,16 +28,14 @@ const HeaderBar = () => {
     <AppBar position="static" sx={{backgroundColor: "#076C4F"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        {/* desktop */}
           <Typography
             variant="h4"
             noWrap
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
+              fontFamily: 'Passion One, cursive',
+              fontWeight: 400,
               color: 'inherit',
               textDecoration: 'none',
               alignItems: 'center',
@@ -46,7 +44,6 @@ const HeaderBar = () => {
             FoodMe 
             <LocationOnOutlinedIcon fontSize='3rem' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}/>
           </Typography>
-        {/* mobile */}
           <Typography
             variant="h4"
             noWrap
@@ -54,9 +51,8 @@ const HeaderBar = () => {
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
+              fontFamily: 'Passion One, cursive',
+              fontWeight: 400,
               color: 'inherit',
               textDecoration: 'none',
               alignItems: 'center',
