@@ -9,7 +9,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 
 const pages = ['LOGIN', 'SIGN UP'];
 
@@ -36,13 +35,11 @@ const HeaderBar = () => {
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'Passion One, cursive',
               fontWeight: 400,
-              color: 'inherit',
-              textDecoration: 'none',
+              color: 'white',
               alignItems: 'center',
             }}
           >
-            FoodMe 
-            <LocationOnOutlinedIcon fontSize='3rem' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}/>
+            FoodMe &#8482;
           </Typography>
           <Typography
             variant="h4"
@@ -53,12 +50,11 @@ const HeaderBar = () => {
               flexGrow: 1,
               fontFamily: 'Passion One, cursive',
               fontWeight: 400,
-              color: 'inherit',
-              textDecoration: 'none',
+              color: 'white',
               alignItems: 'center',
             }}
           >
-            FoodMe <LocationOnOutlinedIcon fontSize='3rem' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}/>
+            FoodMe &#8482;
           </Typography>
           
           <Box sx={{ flexGrow: 1, display: { xs: 'none', justifyContent: "flex-end", md: 'flex' } }}>

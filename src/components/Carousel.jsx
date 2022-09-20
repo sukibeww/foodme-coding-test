@@ -30,15 +30,15 @@ const carouselData = [
       message: "Manage your restaurant bucket list  & share with friends",
       imgUrl: Feature3
   },
-]
+];
 
 const renderSlide = (data) => {
   return(
     <SwiperSlide className="swiper-card" key={data.id}>
       <CarouselCard isAvailable={data.isAvailable} message={data.message} imgUrl={data.imgUrl}/>
     </SwiperSlide>
-  )
-}
+  );
+};
 
 const renderDesktopCarousel = () => {
   return (
@@ -55,25 +55,23 @@ const renderDesktopCarousel = () => {
         {carouselData.map(data => renderSlide(data))}
       </Swiper>
   );
-}
+};
 
 const renderMobileCarousel = () => {
   return(
     <Swiper slidesPerView={1} pagination={true} modules={[Pagination]} className="swiper">
       {carouselData.map(data => renderSlide(data))}
     </Swiper>
-  )
-}
+  );
+};
 
 const Carousel = () => {
   const isMobile = useMediaQuery('(max-width:600px)');
-  console.log(isMobile);
   return (
     <Box sx={{marginTop: '1vh'}}>
       {isMobile ? renderMobileCarousel() : renderDesktopCarousel()}
     </Box>
-  )
-  
+  );
 };
 
 export default Carousel;

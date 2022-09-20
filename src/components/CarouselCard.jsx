@@ -34,7 +34,7 @@ const CarouselCard = (props) => {
                 zIndex: '-1'
             }}/>
         </Box>
-    )
-}
+    );
+};
 
 export default CarouselCard;

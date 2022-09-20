@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import React from 'react'
+import React from 'react';
 import Carousel from './Carousel';
 import './HeroSection.scss';
 
@@ -9,7 +9,7 @@ const HeroSection = () => {
             <Typography
                 class="sub-header"
                 variant="h4">
-                Find great restaurant & food options
+                Find great restaurant &#38; food options
             </Typography>
             <Typography
                 class="main-header"
@@ -18,7 +18,7 @@ const HeroSection = () => {
             </Typography>
             <Carousel />
         </Box>
-    )
-}
+    );
+};
 
 export default HeroSection;

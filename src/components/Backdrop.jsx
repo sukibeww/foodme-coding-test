@@ -1,5 +1,4 @@
 import { Box } from '@mui/material';
-import "./Backdrop.scss";
 import React from 'react';
 import Image from '../img/brooke-lark-HlNcigvUi4Q-unsplash.jpg';
 
