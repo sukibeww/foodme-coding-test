@@ -19,7 +19,7 @@ Components:
 ### Font Inaccuracy 
 Based on the prototype the font "PP Agrandir" is used on all of the relevant components. Since this is a premium font, I had to find a free alternative for it and I have decided that "Passion One, cursive" with a 400 font weight is a viable alternative. 
 
-### Image asset innaccuracy
+### Image asset inaccuracy
 The current images that are being used are not the same as the prototype. The current images are extracted from the provided prototype through screenshot that I found quite similar or "Accurate enough" to replace the prototype. 
 
 # Result  
