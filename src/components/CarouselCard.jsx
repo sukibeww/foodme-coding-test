@@ -3,18 +3,26 @@ import "./CarouselCard.scss";
 import React from 'react';
 import Image from '../img/brooke-lark-HlNcigvUi4Q-unsplash.jpg';
 
-const CarouselCard = () => {
+const CarouselCard = (props) => {
+    const { isAvailable, message } = props;
     return(
         <Box className="card-container">
             <Box className="first-section-container">
                 <Typography
                     class="first-section-header"
                     variant="h4">
-                    Filter menus by your dietary requirements
+                    {message}
                 </Typography>
-                <Button size="medium" class="button-check">
-                    Check it out
-                </Button>
+                {isAvailable ? 
+                    <Button size="medium" class="button-check">
+                        Check it out
+                    </Button>
+                    :
+                    <Button size="medium" class="button-coming-soon">
+                        Coming VERY SOON
+                    </Button>
+                }
+                
             </Box>
             
             <Box
