@@ -12,7 +12,7 @@ const CarouselCard = () => {
                     variant="h4">
                     Filter menus by your dietary requirements
                 </Typography>
-                <Button size="medium" className="button-check">
+                <Button size="medium" class="button-check">
                     Check it out
                 </Button>
             </Box>
