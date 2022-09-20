@@ -9,39 +9,29 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import Divider from '@mui/material/Divider';
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 
-const pages = ['Login', 'Sign up'];
+const pages = ['LOGIN', 'SIGN UP'];
 
 const HeaderBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   return (
     <AppBar position="static" sx={{backgroundColor: "#076C4F"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
+        {/* desktop */}
           <Typography
             variant="h4"
             noWrap
-            component="a"
-            href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -50,16 +40,16 @@ const HeaderBar = () => {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+              alignItems: 'center',
             }}
           >
-            FoodMe
+            FoodMe 
+            <LocationOnOutlinedIcon fontSize='3rem' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}/>
           </Typography>
-
+        {/* mobile */}
           <Typography
             variant="h4"
             noWrap
-            component="a"
-            href=""
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -69,10 +59,12 @@ const HeaderBar = () => {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+              alignItems: 'center',
             }}
           >
-            FoodMe
+            FoodMe <LocationOnOutlinedIcon fontSize='3rem' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}/>
           </Typography>
+          
           <Box sx={{ flexGrow: 1, display: { xs: 'none', justifyContent: "flex-end", md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -125,4 +117,5 @@ const HeaderBar = () => {
     </AppBar>
   );
 };
+
 export default HeaderBar;
