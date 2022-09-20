@@ -12,7 +12,7 @@ const Backdrop = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
             color: "#f5f5f5",
-            height: "30vh",
+            height: "35vh",
             width: "100vw",
         }} />
     )

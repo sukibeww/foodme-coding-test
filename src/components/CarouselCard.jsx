@@ -22,7 +22,6 @@ const CarouselCard = (props) => {
                         Coming VERY SOON
                     </Button>
                 }
-                
             </Box>
             
             <Box
