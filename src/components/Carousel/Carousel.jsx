@@ -4,12 +4,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./Carousel.scss";
-import CarouselCard from './CarouselCard';
+import CarouselCard from '../CarouselCard/CarouselCard';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { Box } from '@mui/material';
-import Feature1 from '../img/feature-1.png';
-import Feature2 from '../img/feature-2.png';
-import Feature3 from '../img/feature-3.png';
+import Feature1 from '../../img/feature-1.png';
+import Feature2 from '../../img/feature-2.png';
+import Feature3 from '../../img/feature-3.png';
 
 const carouselData = [
   {

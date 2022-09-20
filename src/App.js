@@ -1,14 +1,12 @@
 import './App.scss';
-import Backdrop from './components/Backdrop';
-import HeaderBar from './components/HeaderBar';
-import HeroSection from './components/HeroSection';
+import HeaderBar from './components/HeaderBar/HeaderBar';
+import LandingPage from './pages/LandingPage/LandingPage';
 
 function App() {
   return (
     <div className="App">
       <HeaderBar />
-      <Backdrop />
-      <HeroSection />
+      <LandingPage />
     </div>
   );
 }

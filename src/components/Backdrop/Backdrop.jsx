@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import React from 'react';
-import Image from '../img/brooke-lark-HlNcigvUi4Q-unsplash.jpg';
+import Image from '../../img/brooke-lark-HlNcigvUi4Q-unsplash.jpg';
 
 const Backdrop = () => {
     return(
