@@ -8,16 +8,16 @@ const CarouselCard = (props) => {
         <Box className="card-container">
             <Box className="first-section-container">
                 <Typography
-                    class="first-section-header"
+                    id="first-section-header"
                     variant="h4">
                     {message}
                 </Typography>
                 {isAvailable ? 
-                    <Button size="medium" class="button-check">
+                    <Button size="medium" id="button-check">
                         Check it out
                     </Button>
                     :
-                    <Button size="medium" class="button-coming-soon">
+                    <Button size="medium" id="button-coming-soon">
                         Coming VERY SOON
                     </Button>
                 }

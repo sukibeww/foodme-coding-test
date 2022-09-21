@@ -5,14 +5,14 @@ import './HeroSection.scss';
 
 const HeroSection = () => {
     return(
-        <Box className="hero-section-wrapper">
+        <Box id="hero-section-wrapper">
             <Typography
-                class="sub-header"
+                id="sub-header"
                 variant="h4">
                 Find great restaurant &#38; food options
             </Typography>
             <Typography
-                class="main-header"
+                id="main-header"
                 variant="h3">
                 no matter your dietary requirements
             </Typography>

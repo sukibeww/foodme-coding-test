@@ -1,4 +1,4 @@
-.hero-section-wrapper {
+#hero-section-wrapper {
     position: relative;
     color: #ffffff;
     display: flex;
@@ -7,7 +7,7 @@
     padding: 5vh 0;
 }
 
-.sub-header {
+#sub-header {
     font-weight: 400;
     font-size: 5vmin;
     line-height: 3vmax;
@@ -15,7 +15,7 @@
     margin: 10px;
 }
 
-.main-header {
+#main-header {
     font-weight: 400;
     font-size: 6vmin;
     line-height: 3vmax;
