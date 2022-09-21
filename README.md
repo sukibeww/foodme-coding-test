@@ -15,9 +15,11 @@ Components:
 ![image](https://user-images.githubusercontent.com/42060507/191350916-e8710835-7055-44b8-8ec9-ff5a92cef008.png)
 
 # Justifications 
+
 ### Font Inaccuracy 
 Based on the prototype the font "PP Agrandir" is used on all of the relevant components. Since this is a premium font, I had to find a free alternative for it and I have decided that "Passion One, cursive" with a 400 font weight is a viable alternative. 
-### Carousel image card innaccuracy
+
+### Image asset inaccuracy
 The current images that are being used are not the same as the prototype. The current images are extracted from the provided prototype through screenshot that I found quite similar or "Accurate enough" to replace the prototype. 
 
 # Result  
@@ -30,10 +32,11 @@ The current images that are being used are not the same as the prototype. The cu
 
 # Closing 
 
-Thank you for allowing me to participate in this coding challange, It was a fun test that managed to refresh my memory on React and MaterialUI. 
+Thank you for allowing me to participate in this coding challange, It was a fun test that helped me to refresh my knowledge on React and MaterialUI. 
 I hope that you find my work satisfactory.
 
 Sukianto Suteja
+
 Cheers
 
 
